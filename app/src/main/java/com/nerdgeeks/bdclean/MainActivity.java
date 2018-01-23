@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -18,6 +19,10 @@ import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.DrawerBuilder;
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
+import com.nerdgeeks.bdclean.Fragment.EventFragment;
+import com.nerdgeeks.bdclean.Fragment.NoticeFragment;
+import com.nerdgeeks.bdclean.Fragment.ProfileFragment;
+import com.nerdgeeks.bdclean.Fragment.TeamFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
         titleText = (TextView) toolbar.findViewById(R.id.toolbar_title);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
+
+        loadFragment(new ProfileFragment());
 
         result = new DrawerBuilder()
                 .withActivity(this)
@@ -113,24 +120,43 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            Fragment fragment;
+            Fragment mFragment;
             switch (item.getItemId()) {
+
                 case R.id.profile:
                     titleText.setText(R.string.title_profile);
+                    mFragment = new ProfileFragment();
+                    loadFragment(mFragment);
                     return true;
+
                 case R.id.events:
                     titleText.setText(R.string.title_events);
+                    mFragment = new EventFragment();
+                    loadFragment(mFragment);
                     return true;
+
                 case R.id.notice:
                     titleText.setText(R.string.title_notice);
+                    mFragment = new NoticeFragment();
+                    loadFragment(mFragment);
                     return true;
+
                 case R.id.team:
                     titleText.setText(R.string.title_team);
+                    mFragment = new TeamFragment();
+                    loadFragment(mFragment);
                     return true;
             }
             return false;
         }
     };
+
+    private void loadFragment(Fragment mFragment){
+        FragmentTransaction mTransaction = getSupportFragmentManager().beginTransaction();
+        mTransaction.replace(R.id.frame_container, mFragment);
+        mTransaction.addToBackStack(null);
+        mTransaction.commit();
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
