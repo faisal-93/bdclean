@@ -2,12 +2,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.nerdgeeks.bdclean.Fragment.EventFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_background">
+            
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="600dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:background="#D1EDDC">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/event_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabMode="fixed"
+                    app:tabGravity="center"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                </android.support.design.widget.TabLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
 
 </FrameLayout>
