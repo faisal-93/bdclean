@@ -1,90 +1,193 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="40dp"
+    android:gravity="center"
     android:background="@drawable/ic_background"
+    android:orientation="vertical"
     tools:context="com.nerdgeeks.bdclean.Fragment.TeamFragment">
 
+    <TextView
+        android:padding="5dp"
+        android:background="@drawable/header_corner_bg"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Team No : 02"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="Leader : Tanzia Islam Marzia"
+            android:textColor="@android:color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
     <LinearLayout
+        android:padding="20dp"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginRight="50dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="30dp"
-        android:orientation="vertical">
+        android:background="@drawable/bottom_corner_bg">
 
         <LinearLayout
+            android:layout_margin="5dp"
+            android:weightSum="3"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:background="#ffffff">
-            
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:text="Member ID : BDCDHK96795"
+                    android:textColor="@android:color/darker_gray"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#444444"
+                    android:text="Rezvi Alam"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
             <TextView
-                android:layout_width="200dp"
-                android:layout_height="match_parent"
+                android:layout_weight="0"
                 android:gravity="center"
-                android:text="Team No :"
-                android:textStyle="bold"
-                android:textSize="30sp"
-                android:paddingLeft="50dp"
-                android:paddingStart="50dp"
-                android:textColor="#109952"/>
-            
-            <TextView
-                android:id="@+id/tv_team_No"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:textStyle="bold"
-                android:textSize="30sp"
-                android:gravity="center"
-                android:paddingEnd="40dp"
-                android:paddingRight="40dp"
-                android:paddingLeft="2dp"
-                android:paddingStart="2dp"
-                android:textColor="#109952"/>
+                android:textColor="@android:color/black"
+                android:text="25%"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:padding="2dp"
+                android:background="@drawable/circle_loader"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
 
         </LinearLayout>
 
-        <LinearLayout
+        <View
+            android:background="@color/colorPrimaryDark"
             android:layout_width="match_parent"
-            android:layout_height="70dp">
-            
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="match_parent"
-                android:text="Leader  :"
-                android:gravity="center"
-                android:textSize="20sp"
-                android:textColor="#ffffff"
-                android:paddingLeft="5dp"
-                android:paddingStart="5dp"
-                android:textStyle="bold"/>
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:text="Member ID : BDCDHK96795"
+                    android:textColor="@android:color/darker_gray"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="#444444"
+                    android:textStyle="bold"
+                    android:text="Rezvi Alam"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/tv_leader"
-                android:layout_width="220dp"
-                android:layout_height="match_parent"
+                android:layout_weight="0"
                 android:gravity="center"
-                android:textSize="20sp"
-                android:textColor="#ffffff"
-                android:textStyle="bold"
-                android:paddingLeft="2dp"
-                android:paddingStart="2dp"
-                android:paddingRight="2dp"/>
+                android:textColor="@android:color/black"
+                android:text="25%"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:padding="2dp"
+                android:background="@drawable/circle_loader"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
 
         </LinearLayout>
-        <LinearLayout
+
+        <View
+            android:background="@color/colorPrimaryDark"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#D9F0DC">
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:text="Member ID : BDCDHK96795"
+                    android:textColor="@android:color/darker_gray"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="#444444"
+                    android:textStyle="bold"
+                    android:text="Rezvi Alam"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_weight="0"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:text="25%"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:padding="2dp"
+                android:background="@drawable/circle_loader"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
 
         </LinearLayout>
+
+        <View
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
 
     </LinearLayout>
-
-
-
-
-</FrameLayout>
+</LinearLayout>

@@ -7,7 +7,7 @@
     android:background="@drawable/reg_bg">
 
     <LinearLayout
-        android:layout_margin="10dp"
+        android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -53,10 +53,11 @@
                     android:layout_marginBottom="0dp">
 
                     <ImageView
+                        android:padding="5dp"
                         android:layout_width="40dp"
                         android:layout_height="match_parent"
                         android:background="#00984D"
-                        android:scaleType="center"
+                        android:scaleType="centerInside"
                         android:src="@drawable/ic_profile_white"/>
 
                     <EditText
@@ -82,10 +83,11 @@
                     android:layout_marginBottom="0dp">
 
                     <ImageView
+                        android:padding="5dp"
                         android:layout_width="40dp"
                         android:layout_height="match_parent"
                         android:background="#00984D"
-                        android:scaleType="center"
+                        android:scaleType="centerInside"
                         android:src="@drawable/ic_email_white"/>
 
                     <EditText
@@ -110,10 +112,11 @@
                     android:layout_marginBottom="0dp">
 
                     <ImageView
+                        android:padding="5dp"
                         android:layout_width="40dp"
                         android:layout_height="match_parent"
                         android:background="#00984D"
-                        android:scaleType="center"
+                        android:scaleType="centerInside"
                         android:src="@drawable/ic_key_white"/>
 
                     <EditText
@@ -138,10 +141,11 @@
                     android:layout_marginBottom="0dp">
 
                     <ImageView
+                        android:padding="5dp"
                         android:layout_width="40dp"
                         android:layout_height="match_parent"
                         android:background="#00984D"
-                        android:scaleType="center"
+                        android:scaleType="centerInside"
                         android:src="@drawable/ic_event_white"/>
 
                     <EditText
@@ -166,10 +170,11 @@
                     android:layout_marginBottom="0dp">
 
                     <ImageView
+                        android:padding="5dp"
                         android:layout_width="40dp"
                         android:layout_height="match_parent"
                         android:background="#00984D"
-                        android:scaleType="center"
+                        android:scaleType="centerInside"
                         android:src="@drawable/ic_team_white"/>
 
                     <Spinner
@@ -191,10 +196,11 @@
                     android:layout_marginBottom="0dp">
 
                     <ImageView
+                        android:padding="5dp"
                         android:layout_width="40dp"
                         android:layout_height="match_parent"
                         android:background="#00984D"
-                        android:scaleType="center"
+                        android:scaleType="centerInside"
                         android:src="@drawable/ic_code"/>
 
                     <EditText

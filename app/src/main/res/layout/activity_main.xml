@@ -32,23 +32,31 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <FrameLayout
-        android:id="@+id/frame_container"
-        android:background="@drawable/ic_background"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:background="?android:attr/windowBackground"
-        app:itemBackground="@color/bgBottomNavigation"
-        android:foreground="?attr/selectableItemBackground"
-        app:itemIconTint="@drawable/item_icon_drawable"
-        app:itemTextColor="@drawable/item_icon_drawable"
-        app:menu="@menu/navigation" />
+        <FrameLayout
+            android:id="@+id/frame_container"
+            android:background="@drawable/ic_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/navigation"
+            />
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bgBottomNavigation"
+            app:itemBackground="@color/bgBottomNavigation"
+            android:foreground="?attr/selectableItemBackground"
+            app:itemIconTint="@drawable/item_icon_drawable"
+            app:itemTextColor="@drawable/item_icon_drawable"
+            app:menu="@menu/navigation" />
+
+    </RelativeLayout>
 
 </android.support.design.widget.CoordinatorLayout>
