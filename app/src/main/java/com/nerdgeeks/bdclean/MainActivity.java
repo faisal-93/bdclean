@@ -2,12 +2,12 @@ package com.nerdgeeks.bdclean;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.Menu;
@@ -23,12 +23,16 @@ import com.nerdgeeks.bdclean.Fragment.EventFragment;
 import com.nerdgeeks.bdclean.Fragment.NoticeFragment;
 import com.nerdgeeks.bdclean.Fragment.ProfileFragment;
 import com.nerdgeeks.bdclean.Fragment.TeamFragment;
+import com.nerdgeeks.bdclean.helper.SQLiteHandler;
+import com.nerdgeeks.bdclean.helper.SessionManager;
 
 public class MainActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
     private Drawer result;
     private TextView titleText;
+    private SQLiteHandler db;
+    private SessionManager session;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +43,11 @@ public class MainActivity extends AppCompatActivity {
         titleText = (TextView) toolbar.findViewById(R.id.toolbar_title);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
+
+        // SqLite database handler
+        db = new SQLiteHandler(getApplicationContext());
+        // session manager
+        session = new SessionManager(getApplicationContext());
 
         loadFragment(new ProfileFragment());
 
@@ -98,7 +107,13 @@ public class MainActivity extends AppCompatActivity {
 
     //Logout method
     private void onActionLogout() {
-        
+        session.setLogin(false);
+        db.deleteUsers();
+
+        // Launching the login activity
+        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     @Override

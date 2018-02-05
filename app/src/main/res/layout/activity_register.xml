@@ -65,7 +65,7 @@
                             android:src="@drawable/ic_profile_white"/>
 
                         <EditText
-                            android:id="@+id/username"
+                            android:id="@+id/fullname"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:paddingLeft="10dp"
@@ -95,6 +95,7 @@
                             android:src="@drawable/ic_email_white"/>
 
                         <EditText
+                            android:id="@+id/email"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:paddingLeft="10dp"
@@ -124,6 +125,7 @@
                             android:src="@drawable/ic_key_white"/>
 
                         <EditText
+                            android:id="@+id/password"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:paddingLeft="10dp"
@@ -277,5 +279,6 @@
         android:id="@+id/progressBar"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
 </android.support.design.widget.CoordinatorLayout>
