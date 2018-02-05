@@ -151,7 +151,7 @@
 
     <ProgressBar
         android:layout_marginBottom="100dp"
-        android:id="@+id/circular_progress"
+        android:id="@+id/progressBar"
         android:layout_gravity="center|bottom"
         android:layout_width="100dp"
         android:layout_height="100dp" />
