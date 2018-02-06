@@ -29,6 +29,8 @@
     <string name="date_of_birth">Date of Birth</string>
     <string name="name_hint">Full Name</string>
     <string name="register_as_volunteer">Register As A Volunteer</string>
+    <string name="joined">I Joined</string>
+    <string name="upcoming">Upcoming</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
