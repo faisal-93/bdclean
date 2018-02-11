@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:gravity="bottom"
     android:layout_width="match_parent"
@@ -147,6 +148,7 @@
                         android:layout_marginBottom="0dp">
 
                         <ImageView
+                            android:id="@+id/datePicker"
                             android:layout_width="80dp"
                             android:layout_height="match_parent"
                             android:background="#00984D"
@@ -182,12 +184,13 @@
                             android:scaleType="center"
                             android:src="@drawable/ic_team_white"/>
 
-                        <Spinner
+                        <com.jaredrummler.materialspinner.MaterialSpinner
+                            android:id="@+id/spinner"
+                            app:ms_background_selector="@android:color/white"
+                            app:ms_text_color="@android:color/darker_gray"
+                            app:ms_dropdown_height="150dp"
                             android:layout_width="match_parent"
-                            android:layout_height="80dp"
-                            android:layout_gravity="center"
-                            android:background="@android:color/white"
-                            android:gravity="center"/>
+                            android:layout_height="80dp"/>
 
                     </LinearLayout>
 
@@ -281,6 +284,7 @@
         android:id="@+id/progressBar"
         android:layout_gravity="center"
         android:layout_width="100dp"
-        android:layout_height="100dp" />
+        android:layout_height="100dp"
+        android:visibility="invisible"/>
 
 </android.support.design.widget.CoordinatorLayout>

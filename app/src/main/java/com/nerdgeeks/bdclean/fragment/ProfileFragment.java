@@ -1,4 +1,4 @@
-package com.nerdgeeks.bdclean.Fragment;
+package com.nerdgeeks.bdclean.fragment;
 
 
 import android.os.Bundle;

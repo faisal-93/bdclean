@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="districts_of_bd">
+        <item>BD Clean - Bagerhat</item>
+        <item>BD Clean - Bandarban</item>
+        <item>BD Clean - Barguna</item>
+        <item>BD Clean - Barisal</item>
+        <item>BD Clean - Bhola</item>
+        <item>BD Clean - Bogra</item>
+        <item>BD Clean - Brahmanbaria</item>
+        <item>BD Clean - Chandpur</item>
+        <item>BD Clean - Chapai Nawabganj</item>
+        <item>BD Clean - Chittagong</item>
+        <item>BD Clean - Chuadanga</item>
+        <item>BD Clean - Comilla</item>
+        <item>BD Clean - Cox's Bazar</item>
+        <item>BD Clean - Dhaka</item>
+        <item>BD Clean - Dinajpur</item>
+        <item>BD Clean - Faridpur</item>
+        <item>BD Clean - Feni</item>
+        <item>BD Clean - Gaibandha</item>
+        <item>BD Clean - Gazipur</item>
+        <item>BD Clean - Gopalganj</item>
+        <item>BD Clean - Habiganj</item>
+        <item>BD Clean - Jamalpur</item>
+        <item>BD Clean - Jessore</item>
+        <item>BD Clean - Jhalokati</item>
+        <item>BD Clean - Jhenaidah</item>
+        <item>BD Clean - Joypurhat</item>
+        <item>BD Clean - Khagrachhari</item>
+        <item>BD Clean - Khulna</item>
+        <item>BD Clean - Kishoreganj</item>
+        <item>BD Clean - Kurigram</item>
+        <item>BD Clean - Kushtia</item>
+        <item>BD Clean - Lakshmipur</item>
+        <item>BD Clean - Lalmonirhat</item>
+        <item>BD Clean - Madaripur</item>
+        <item>BD Clean - Magura</item>
+        <item>BD Clean - Manikganj</item>
+        <item>BD Clean - Meherpur</item>
+        <item>BD Clean - Moulvibazar</item>
+        <item>BD Clean - Munshiganj</item>
+        <item>BD Clean - Mymensingh</item>
+        <item>BD Clean - Naogaon</item>
+        <item>BD Clean - Narail</item>
+        <item>BD Clean - Narayanganj</item>
+        <item>BD Clean - Narsingdi</item>
+        <item>BD Clean - Natore</item>
+        <item>BD Clean - Netrokona</item>
+        <item>BD Clean - Nilphamari</item>
+        <item>BD Clean - Noakhali</item>
+        <item>BD Clean - Pabna</item>
+        <item>BD Clean - Panchagarh</item>
+        <item>BD Clean - Patuakhali</item>
+        <item>BD Clean - Pirojpur</item>
+        <item>BD Clean - Rajbari</item>
+        <item>BD Clean - Rajshahi</item>
+        <item>BD Clean - Rangamati</item>
+        <item>BD Clean - Rangpur</item>
+        <item>BD Clean - Satkhira</item>
+        <item>BD Clean - Shariatpur</item>
+        <item>BD Clean - Sherpur</item>
+        <item>BD Clean - Sirajganj</item>
+        <item>BD Clean - Sunamganj</item>
+        <item>BD Clean - Sylhet</item>
+        <item>BD Clean - Tangail</item>
+        <item>BD Clean - Thakurgaon</item>
+    </string-array>
+</resources>

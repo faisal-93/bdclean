@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
         android:id="@+id/joined"
-        android:title="@string/joined" />
+        android:title="@string/joined"
+        app:showAsAction="always|withText"/>
 
     <item
         android:id="@+id/upcoming"
-        android:title="@string/upcoming" />
+        android:title="@string/upcoming"
+        app:showAsAction="always|withText"/>
 
 
 </menu>

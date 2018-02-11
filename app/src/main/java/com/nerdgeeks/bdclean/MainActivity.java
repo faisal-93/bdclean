@@ -19,10 +19,10 @@ import com.mikepenz.materialdrawer.Drawer;
 import com.mikepenz.materialdrawer.DrawerBuilder;
 import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
-import com.nerdgeeks.bdclean.Fragment.EventFragment;
-import com.nerdgeeks.bdclean.Fragment.NoticeFragment;
-import com.nerdgeeks.bdclean.Fragment.ProfileFragment;
-import com.nerdgeeks.bdclean.Fragment.TeamFragment;
+import com.nerdgeeks.bdclean.fragment.EventFragment;
+import com.nerdgeeks.bdclean.fragment.NoticeFragment;
+import com.nerdgeeks.bdclean.fragment.ProfileFragment;
+import com.nerdgeeks.bdclean.fragment.TeamFragment;
 import com.nerdgeeks.bdclean.helper.SQLiteHandler;
 import com.nerdgeeks.bdclean.helper.SessionManager;
 

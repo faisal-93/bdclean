@@ -2,11 +2,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="40dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center"
     android:background="@drawable/ic_background"
     android:orientation="vertical"
-    tools:context="com.nerdgeeks.bdclean.Fragment.TeamFragment">
+    tools:context="com.nerdgeeks.bdclean.fragment.TeamFragment">
 
     <TextView
         android:padding="5dp"
@@ -73,16 +73,15 @@
 
             </LinearLayout>
 
-            <TextView
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                app:cpb_progress="80"
                 android:layout_weight="0"
-                android:gravity="center"
-                android:textColor="@android:color/black"
-                android:text="25%"
-                android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                android:padding="2dp"
-                android:background="@drawable/circle_loader"
-                android:layout_width="40dp"
-                android:layout_height="40dp" />
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                app:cpb_background_progressbar_color="@android:color/white"
+                app:cpb_background_progressbar_width="5dp"
+                app:cpb_progressbar_color="@color/colorPrimaryDark"
+                app:cpb_progressbar_width="4dp"/>
 
         </LinearLayout>
 

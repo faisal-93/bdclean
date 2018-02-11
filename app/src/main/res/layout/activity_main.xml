@@ -38,6 +38,7 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <FrameLayout
+            android:padding="20dp"
             android:id="@+id/frame_container"
             android:background="@drawable/ic_background"
             android:layout_width="match_parent"
@@ -51,8 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:background="@color/bgBottomNavigation"
-            app:itemBackground="@color/bgBottomNavigation"
-            android:foreground="?attr/selectableItemBackground"
+            app:itemBackground="@drawable/bottom_nav_background"
             app:itemIconTint="@drawable/item_icon_drawable"
             app:itemTextColor="@drawable/item_icon_drawable"
             app:menu="@menu/navigation" />
