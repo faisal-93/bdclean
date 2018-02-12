@@ -73,7 +73,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
                 if (!userEmail.isEmpty() && !userPassword.isEmpty()) {
                     // login user
-                    checkLogin(userEmail, userPassword);
+                    //checkLogin(userEmail, userPassword);
+                    intentActivity(this, MainActivity.class);
                 } else {
                     // Prompt user to enter credentials
                     Toast.makeText(getApplicationContext(),"Email & password is required.", Toast.LENGTH_LONG).show();
